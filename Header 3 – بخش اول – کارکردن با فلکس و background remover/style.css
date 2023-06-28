@@ -1,0 +1,106 @@
+body{
+    font-family: 'Teko', sans-serif;
+font-family: 'Unbounded', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    
+     
+}
+.logo{
+    padding: 15px 50px;
+}
+.motor{
+    color: rgb(131, 6, 6);
+}
+.login{
+ color: rgb(176, 8, 8) ;
+}
+.ul1{
+color: black;
+font-size: large;
+display: flex;
+list-style: none;
+cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  color: white;
+}
+.home , .buy , .login , .product{
+    padding-left: 30px;
+}
+  li:hover{
+    font-size: larger;
+    transition: all 1s;
+}
+.two{
+    color:rgb(176, 8, 8);
+}
+h2{
+    color: rgb(228, 224, 224);
+    font-size: 8rem;
+    text-align: center;
+    justify-content: center;
+     padding-top:50px ;
+     animation: MoveInleft 2s ease-out;
+}
+main{
+    background-color: rgb(20, 19, 19);
+    width: 100%;
+    height: 600px;
+}
+img{
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    animation: MoveInRight 2s ease-out;
+}
+.ul2{
+    position: absolute;
+    color: white;
+    top: 500px;
+    animation: MoveInleft 2s ease-out;
+
+}
+
+.li2{
+
+    padding-top: 5px;
+    padding-left: 20px;
+}
+@keyframes MoveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes MoveInleft {
+    0% {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
